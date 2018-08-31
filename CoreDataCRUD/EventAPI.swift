@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import PDFKit
 
 /**
     Event API contains the endpoints to Create/Read/Update/Delete Events.
@@ -99,7 +100,14 @@ class EventAPI {
                 }
             }
         }
-
+        
+        eventItem.date = Date()
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "Apple_HIGuidelines", ofType: "pdf")!)
+        let doc = PDFDocument(url: url)
+        if let data = doc?.dataRepresentation(){
+            eventItem.data = data
+        }
+        
         //Save current work on Minion workers
         self.persistenceManager.saveWorkerContext(minionManagedObjectContextWorker)
 
@@ -368,7 +376,9 @@ class EventAPI {
                 }
             }
         }
-
+        
+        print("is data nil?",eventItemToUpdate.data == nil)
+        
         //Persist new Event to datastore (via Managed Object Context Layer).
         self.persistenceManager.saveWorkerContext(minionManagedObjectContextWorker)
         self.persistenceManager.mergeWithMainContext()

@@ -51,4 +51,5 @@ class Event: NSManagedObject {
     @NSManaged var fb_url: AnyObject
     @NSManaged var ticket_url: AnyObject
     @NSManaged var title: String
+    @NSManaged var data: Data?
 }

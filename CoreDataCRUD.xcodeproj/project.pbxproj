@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36972D9D21395976001C15E3 /* Apple_HIGuidelines.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 36972D9C21395976001C15E3 /* Apple_HIGuidelines.pdf */; };
 		C32607AF1B321D6E00B588FC /* LocalReplicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32607AE1B321D6E00B588FC /* LocalReplicator.swift */; };
 		C32C107E1BBDB05D00973151 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32C107D1BBDB05D00973151 /* DateFormatter.swift */; };
 		C32C10801BBDB11E00973151 /* AttendeesGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32C107F1BBDB11E00973151 /* AttendeesGenerator.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36972D9C21395976001C15E3 /* Apple_HIGuidelines.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Apple_HIGuidelines.pdf; sourceTree = "<group>"; };
 		C32607AE1B321D6E00B588FC /* LocalReplicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalReplicator.swift; sourceTree = "<group>"; };
 		C32C107D1BBDB05D00973151 /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		C32C107F1BBDB11E00973151 /* AttendeesGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendeesGenerator.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		C359AA721B30E51E005A3203 /* CoreDataCRUD */ = {
 			isa = PBXGroup;
 			children = (
+				36972D9C21395976001C15E3 /* Apple_HIGuidelines.pdf */,
 				C359AAA61B30E53C005A3203 /* Models */,
 				C3CB0A891BBC88C3006A1911 /* CoreData */,
 				C3A84F0F1B331E6E000052F9 /* Replicator */,
@@ -330,6 +333,7 @@
 				TargetAttributes = {
 					C359AA6F1B30E51E005A3203 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 6X7ND428MT;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -372,6 +376,7 @@
 			files = (
 				C3783E5C1EF70D0A0023FF38 /* Assets.xcassets in Resources */,
 				C33A6D891B3339E200B4B274 /* events.json in Resources */,
+				36972D9D21395976001C15E3 /* Apple_HIGuidelines.pdf in Resources */,
 				C359AA811B30E51E005A3203 /* LaunchScreen.storyboard in Resources */,
 				C359AA791B30E51E005A3203 /* Main.storyboard in Resources */,
 			);
@@ -585,9 +590,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6X7ND428MT;
 				INFOPLIST_FILE = CoreDataCRUD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.jongensvantechniek.CoreDataCRUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,9 +611,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6X7ND428MT;
 				INFOPLIST_FILE = CoreDataCRUD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.jongensvantechniek.CoreDataCRUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
